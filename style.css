@@ -1,0 +1,171 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  user-select: none;
+  line-break: normal;
+  word-wrap: break-word;
+  word-break: break-all;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+  display: grid;
+  text-align: center;
+  background-color: black;
+}
+
+nav {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0px 0px 4px white;
+  /* background-color: rgba(255, 255, 255, 0.1); */
+}
+nav:hover {
+  box-shadow: 0px 0px 4px white;
+}
+nav a {
+  min-height: 40px;
+  display: grid;
+  place-content: center;
+  padding: 0 0.5em;
+  margin: auto;
+  color: black;
+  transform: scale(1);
+  /* border-radius: 1em; */
+  transition: all 0.4s;
+  background-color: transparent;
+}
+nav a:hover,
+nav a.first {
+  color: aqua;
+  background-color: green;
+  /* transform: scale(1.25); */
+}
+.nav a.menu {
+  display: grid;
+}
+.nav-2 {
+  display: none;
+  width: max-content;
+  flex-direction: row;
+  justify-self: space-around;
+  flex-wrap: nowrap;
+  position: fixed;
+  padding: 0 1em;
+  z-index: 2;
+  top: 40px;
+  width: 100%;
+  backdrop-filter: blur(100px);
+  background-color: black;
+  /* background-color: rgba(0, 0, 0, 0.45); */
+}
+.nav-2:hover {
+  box-shadow: -4px -4px 8px rgba(255, 255, 255, 0.56),
+    4px 4px 8px rgba(255, 255, 255, 0.56);
+}
+.nav-2 a {
+  display: flex;
+  color: #fff;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+/* }
+.nav-2 a::before {
+  content: "# ";
+} */
+.search {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: max-content;
+  overflow: hidden;
+}
+.search input {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 100;
+  display: none;
+}
+.search:hover > input {
+  display: flex;
+  padding-left: 1em;
+}
+.logo {
+  display: grid;
+  place-content: center;
+  width: 100%;
+  font-size: 30px;
+  background-color: black;
+}
+.logo a {
+  display: flex;
+  width: 100%;
+  width: fit-content;
+  margin: 0.25em;
+  padding: 0.3em;
+  text-decoration: none;
+  color: white;
+  transition: all 0.4s;
+}
+.logo a:hover {
+  color: black;
+  background-color: white;
+}
+
+.d-flex {
+  position: relative;
+  top: 60px;
+  margin: auto;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  overflow: auto;
+}
+.d-flex .card {
+  display: flex;
+  height: max-content;
+  width: max-content;
+  flex-wrap: wrap;
+  margin: 1em auto;
+  flex-direction: column;
+  border-radius: 12pt 12pt 0 0;
+  border: solid 0.1pt white;
+}
+.d-flex .card:hover {
+  border: none;
+  position: relative;
+  z-index: 2;
+  box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.2);
+}
+.d-flex .card a {
+  display: flex;
+  width: 100%;
+  padding: 1em 0.8em;
+  height: max-content;
+  color: white;
+  text-decoration: none;
+}
+.card a:hover {
+  color: black;
+  background-color: white;
+}
+.d-flex .card .img img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 14pt 14pt 0 0;
+}

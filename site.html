@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Image gallery Site</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <div class="logo">
+        <a href="#" target="_top"> ImagesHub# </a>
+      </div> -->
+      <nav class="navbar">
+        <a href="#" target="_top"> <h1>Image Gallery</h1> </a>
+        <a href="#" class="link first">Home</a>
+
+        <a href="#" class="link">Info</a>
+        <a href="#" class="link">About</a>
+        <a href="#" class="link">Services</a>
+        <a href="#" class="link">Contact Us</a>
+        <div class="search">
+          <input
+            list="browsers"
+            name="browser"
+            id="browser"
+            autocomplete="on"
+          />
+          <datalist id="browsers">
+            <option value="Animation">
+              <a href="#" target="_self"></a>
+            </option>
+            <option value="Romance">
+              <a href="#" target="_self"></a>
+            </option>
+            <option value="Action">
+              <a href="#" target="_self"></a>
+            </option>
+            <option value="Thriller">
+              <a href="#" target="_self"></a>
+            </option>
+            <option value="Horror">
+              <a href="#" target="_self"></a>
+            </option>
+          </datalist>
+          <img
+            width="30"
+            height="30"
+            class="s-icon"
+            style="filter: grayscale(100%)"
+            src="https://img.icons8.com/ios-glyphs/30/search--v1.png"
+            alt="search--v1"
+          />
+        </div>
+        <a href="#" class="link menu">
+          <img
+            width="30"
+            height="30"
+            class="menu-icon"
+            src="https://img.icons8.com/ios-glyphs/30/menu--v1.png"
+            alt="menu--v1"
+          />
+        </a>
+        <div class="nav-2">
+          <a href="#" class="items">Action</a>
+          <a href="#" class="items">Animation</a>
+          <a href="#" class="items">Horror</a>
+          <a href="#" class="items">Romance</a>
+          <a href="#" class="items">Thriller</a>
+        </div>
+      </nav>
+      <div class="d-flex">
+        <div class="card">
+          <div class="img">
+            <img
+              src="../sliding-image/benjamin-voros-phIFdC6lA4E-unsplash.jpg"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <a href="#" target="_blank">Image-1</a>
+        </div>
+        <div class="card">
+          <div class="img">
+            <img
+              src="../sliding-image/benjamin-voros-phIFdC6lA4E-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <a href="#" target="_blank">Image-2</a>
+        </div>
+        <div class="card">
+          <div class="img">
+            <img
+              src="../sliding-image/john-lee-oMneOBYhJxY-unsplash.jpg"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <a href="#" target="_blank">Image-3</a>
+        </div>
+        <div class="card">
+          <div class="img">
+            <img
+              src="../sliding-image/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <a href="#" target="_blank">Image-4</a>
+        </div>
+        <div class="card">
+          <div class="img">
+            <img
+              src="../sliding-image/szabolcs-toth-ZHOIR8oLvh0-unsplash.jpg"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <a href="#" target="_blank">Image-5</a>
+        </div>
+        <div class="card">
+          <div class="img">
+            <img
+              src="../sliding-image/garrett-parker-DlkF4-dbCOU-unsplash.jpg"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <a href="#" target="_blank">Image-6</a>
+        </div>
+      </div>
+    </div>
+    <script>
+      let e = document.querySelector(".nav-2");
+      let n = (document.querySelector(".menu").onclick = () => {
+        if (e.style.display === "none") e.style.display = "flex";
+        else e.style.display = "none";
+      });
+    </script>
+  </body>
+</html>
